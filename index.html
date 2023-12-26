@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <!--css files-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <title>ROCK PAPPER SCISSOR GAME</title>
+</head>
+<body>
+    <div class="rule d-none ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><h3>RULES</h3></div>
+                <div class="col"><img class="close" src="img/icon-close.svg" alt=""></div>
+            </div>
+            <img  class="img-rules" src="img/image-rules-bonus.svg" alt="">
+        </div>
+    </div>
+    <div class="container ">
+
+        <div class="main-box">
+            <div class="game-headers">
+                <p>ROCK</p>
+                <p>PAPER</p>
+                <p>SCISSORS</p>
+                <p>LIZARD</p>
+                <p>SPOCK</p>
+            </div>
+            <div class="score-box">
+                <p class="head">score</p>
+                <p class="result">0</p>
+            </div>
+        </div>
+
+        <div class="game-options  ">
+            <div class="pentagon"><img src="img/bg-pentagon.svg" alt=""></div>
+            <div class="row " style=" display:flex;flex-direction: row; justify-content: center;">
+                <div class="col-6 text-center frist-option scissor" style=" outline: solid 15px  hsl(39, 89%, 49%)">
+                        <img src="img/icon-scissors.svg" alt="">
+                </div>
+            </div>
+            <div class="row " style=" display:flex;flex-direction: row; justify-content: space-between; ">
+                <div class="col-6 text-center spock" style=" outline: solid 15px  hsl(189, 59%, 53%)"><img src="img/icon-spock.svg" alt=""></div>
+                <div class="col-6 text-center paper" style=" outline: solid 15px  hsl(230, 89%, 62%)"><img src="img/icon-paper.svg" alt=""></div>
+            </div>
+            <div class="row" style=" display:flex;flex-direction: row; justify-content: space-around;">
+                <div class="col-6 text-center lizard" style=" outline: solid 15px  hsl(261, 73%, 60%)"><img src="img/icon-lizard.svg" alt=""></div>
+                <div class="col-6 text-center rock" style=" outline: solid 15px  hsl(349, 71%, 52%)"><img src="img/icon-rock.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="game" style="width: 100%;">
+            <div class=" game-dis text-uppercase">
+                <p>You picked</p>
+                <p>computer picked</p>
+            </div>
+            <div class="row" style=" display:flex;flex-direction: row; justify-content: space-around;">
+            
+            </div>
+            <div class="result-2 text-uppercase">
+                <h3></h3>
+                <button class="text-uppercase">Play again</button>
+            </div>
+        </div>
+        <div class="rules-button">
+            <button>Rules</button>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/all.min.js"></script>
+    <!--scripts files -->
+</body>
+</html>
