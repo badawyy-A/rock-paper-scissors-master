@@ -303,7 +303,7 @@ html{
     }
 }
 @media (max-width: 768px) {
-    .container{
+    .body{
         height: 800px;
     }
     .rule .container{
