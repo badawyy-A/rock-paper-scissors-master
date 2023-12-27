@@ -35,9 +35,9 @@ rock.addEventListener('click', () => {
 });
 
 
-    playAgainBtn.addEventListener('click',()=>{
-        window.location.reload();
-    })
+playAgainBtn.addEventListener('click',()=>{
+    window.location.reload();
+})
 
 
 function game(playerMove) {
@@ -103,14 +103,22 @@ function game(playerMove) {
 
     row.appendChild(playerMoveCopy);
     row.appendChild(computerMoveCopy);
+    computerMoveCopy.classList.add('visaple')
+    setTimeout(()=>{
+        computerMoveCopy.classList.remove('visaple')
+    },1000)
+    setTimeout(()=>{
+        resultT.innerText = `${result}`
+        playAgainBtn.classList.remove('d-none')
+    },1000)
 
-    resultT.innerText = `${result}`
-
-    if(result === 'YOU WIN'){
-        playerMoveCopy.classList.add('win')
-    }else if (result === 'YOU LOSE'){
-        computerMoveCopy.classList.add('win')
-    }
+    setTimeout(()=>{
+        if(result === 'YOU WIN'){
+            playerMoveCopy.classList.add('win')
+        }else if (result === 'YOU LOSE'){
+            computerMoveCopy.classList.add('win')
+        }
+    },1500)
 
     if(result === 'YOU WIN'){
         updateScoreAndStoreInLocalStorage()
