@@ -110,7 +110,7 @@ function game(playerMove) {
     setTimeout(()=>{
         resultT.innerText = `${result}`
         playAgainBtn.classList.remove('d-none')
-    },1000)
+    },1500)
 
     setTimeout(()=>{
         if(result === 'YOU WIN'){
