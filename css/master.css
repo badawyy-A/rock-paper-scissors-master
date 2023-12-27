@@ -43,10 +43,11 @@ html{
 .container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
-    height: 800px;
+    height: 900px;
 }
 
 .rule .container{
