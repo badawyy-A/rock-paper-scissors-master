@@ -46,6 +46,7 @@ html{
     align-items: center;
     position: relative;
     overflow: hidden;
+    height: 800px;
 }
 
 .rule .container{
@@ -193,6 +194,7 @@ html{
     transition: 0.5s ease;
     z-index: -1;
 }
+
 @media (min-width: 768px) {
     .row .col-6:hover::before{
         width: 200px;
@@ -239,7 +241,7 @@ html{
     font-weight: 100;
     margin-bottom: 20px;
 }
-.result-2 button{
+.result-2 .play-again-button{
     width: 200px;
     height: 30px;
     color: rgba(0, 0, 0, 0.8);
@@ -247,6 +249,7 @@ html{
     border-radius: 8px;
     border: none;
 }
+
 .win::before{
     content: '';
     width: 220px;
@@ -254,7 +257,7 @@ html{
     position: absolute;
     background-color: rgba(214, 209, 209, 0.2);
     border-radius: 125px;
-    transition: 0.5s ease;
+    transition:  1s ease; 
     z-index: -1;
 }
 .win::after{
@@ -264,7 +267,7 @@ html{
     position: absolute;
     background-color: rgba(99, 97, 97, 0.6);
     border-radius: 150px;
-    transition: 1s ease;
+    transition:  1.5s ease; 
     z-index: -2;
 }
 
@@ -286,6 +289,10 @@ html{
     word-spacing: 2px;
     letter-spacing: 1px;
 }
+.visaple{
+    visibility: hidden;
+
+}
 @media (max-width: 998px){
     .rule .container{
         width: 50%;
@@ -303,8 +310,8 @@ html{
     }
 }
 @media (max-width: 768px) {
-    .body{
-        height: 800px;
+    .container{
+        height: 900px;
     }
     .rule .container{
         width: 60%;
@@ -345,6 +352,9 @@ html{
         width: 250px;
         height: 250px;
         border-radius: 125px;
+    }
+    .result-2{
+        margin-top: 30px;
     }
 }
 @media (max-width: 628px){
